@@ -38,4 +38,4 @@ app.use(require('./routes'));
 //Criando realtime, para notificar usuários dos novos arquivos
 
 
-server.listen(3333);
+server.listen(process.env.PORT || 3333); //VARIAVEL DE AMBIENTE
